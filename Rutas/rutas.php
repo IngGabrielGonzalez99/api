@@ -15,7 +15,7 @@ if ($method === 'POST' && isset($arrayRutas[1]) && $arrayRutas[1] === 'clientes'
     return;
 }
 
-// Crear cliente
+// Create client
 if ($method === 'POST' && isset($arrayRutas[1]) && $arrayRutas[1] === 'clientes') {
     $datos = json_decode(file_get_contents('php://input'), true);
     $controladorClientes = new ControladorClientes();
